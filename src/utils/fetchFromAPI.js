@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://exercisedb.p.rapidapi.com/exercises/bodyPartList";
+const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
   params: {
@@ -12,7 +12,7 @@ const options = {
   },
 };
 
-export const fetchFromApi = async (url) => {
+export const fetchFromAPI = async (url) => {
   const { data } = await axios.get(`${BASE_URL}${url}`, options);
   return data;
 };
